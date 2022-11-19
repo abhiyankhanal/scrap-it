@@ -17,5 +17,6 @@ two:
   size: MyString
   stars: 1.5
   seller: MyString
-  category: MyString
+  category: MyString 
   img_url: MyString
+  
