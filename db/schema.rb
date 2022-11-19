@@ -13,13 +13,13 @@
 ActiveRecord::Schema[7.0].define(version: 2022_11_18_053057) do
   create_table "crawlers", force: :cascade do |t|
     t.string "url"
-    t.string = "img_url"
     t.string "title"
     t.integer "price"
     t.string "size"
     t.float "stars"
     t.string "seller"
     t.string "category"
+    t.string "img_url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
