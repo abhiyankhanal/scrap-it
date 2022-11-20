@@ -1,3 +1,3 @@
 class Category < ApplicationRecord
-# has_many :crawler
+# has_many :crawlers
 end

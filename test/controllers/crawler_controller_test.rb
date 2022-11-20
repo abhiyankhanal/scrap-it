@@ -10,10 +10,10 @@ class CrawlerControllerTest < ActionDispatch::IntegrationTest
   end
   test "success creating crawled data on database" do
     assert_difference "Crawler.count" do
-     post crawler_path(@crawler_item)
+    post crawler_path(@crawler_item)
   end
   assert_redirect_to crawler_index(Crawler.last)
-  assert_equal "ACrawling operation was successfull.", flash[:notice]
+  assert_equal "Crawling operation was successfull.", flash[:notice]
 end
 end
 

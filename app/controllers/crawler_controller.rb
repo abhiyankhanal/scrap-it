@@ -12,6 +12,7 @@ class CrawlerController < ApplicationController
     @crawler = Crawler.new(crawler_params)
     if @crawler.save
       url = @crawler.url
+      ApplicationJob.perform_later
       helpers.crawler(url)
       flash[:notice] = "Crawling operation was successfull."
       render json: {data: @crawler , status: 'success'}, status: :ok
