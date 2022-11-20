@@ -1,8 +1,11 @@
-module CrawlerHelper
-require 'open-uri'
-require 'nokogiri'
+class ReportWorker
+    include Sidekiq::Worker
+    sidekiq_options retry: false
+    require 'open-uri'
+    require 'nokogiri'
 
 def crawler(url)
+    sleep 5
     html_doc = Nokogiri::HTML(URI.open(url))
     @url = url
     @crawler.title = html_doc.css('.B_NuCI').children.text
