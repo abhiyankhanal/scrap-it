@@ -7,16 +7,6 @@ one:
   size: MyString
   stars: 1.5
   seller: MyString
-  category: MyString
-  img_url: MyString
-
-two:
-  url: MyString
-  title: MyString
-  price: 1
-  size: MyString
-  stars: 1.5
-  seller: MyString
   category: MyString 
   img_url: MyString
   
