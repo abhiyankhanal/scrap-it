@@ -7,8 +7,10 @@
 - After cloning, open a terminal, go to the root folder of the project and perform the
   following commands.
 
-    1. bundle install
-    2. bundle exec rails server
+    1. `bundle install`
+    2. `bundle exec rails server`
+    3. `redis-server`
+    4. `bundle exec sidekiq`
 
   The first command will install necessary gem and the second command will eun the server on port 3000 by default
   
@@ -111,6 +113,7 @@
 Following are high level packages/gems
   1. Nokogiri:  Package for selecting the element inside html DOM
   2. Open-uri: Package for uri parsing
+  3. Sidekiq: Background job processor/server
 
 
 ## Code Description ##
