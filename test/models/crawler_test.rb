@@ -1,7 +1,4 @@
 require "test_helper"
 
-class CrawlerTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+class CrawlerTest < ActiveSupport::TestCase  
 end
